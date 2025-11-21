@@ -1,6 +1,18 @@
 document.addEventListener('DOMContentLoaded', function() {
     const burgerMenu = document.querySelector('.burger-menu');
     const mobileMenu = document.querySelector('.mobile-menu');
+    const header = document.querySelector('header');
+
+    function updateMenuPosition() {
+        if (header) {
+            const headerHeight = header.offsetHeight;
+            mobileMenu.style.top = headerHeight + 'px';
+        }
+    }
+
+    // Mettre à jour la position au chargement et au redimensionnement
+    updateMenuPosition();
+    window.addEventListener('resize', updateMenuPosition);
 
     burgerMenu.addEventListener('click', function() {
         burgerMenu.classList.toggle('active');
