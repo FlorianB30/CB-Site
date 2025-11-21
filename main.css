@@ -12,7 +12,7 @@ body {
 .flex-row {
     display: flex;
     flex-direction: row;
-    column-gap: 0.4rem;
+    column-gap: 0.3.25rem;
 }
 
 header {
@@ -129,9 +129,12 @@ section {
     margin-right: 5%;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
 }
 
-section h1 {
+section h1, section h2 {
     color: #D5AA48;
     text-align: center;
 }
@@ -141,7 +144,7 @@ section p {
     text-align: center;
     display: flex;
     flex-direction: column;
-    row-gap: 4rem;
+    row-gap: 3.25rem;
 }
 
 .presentation-container {
@@ -150,13 +153,13 @@ section p {
     padding: 1rem;
     display: flex;
     flex-direction: column;
-    row-gap: 4rem;
+    row-gap: 3.25rem;
 }
 
 .device-col-row {
     display: flex;
     flex-direction: column;
-    row-gap: 4rem;
+    row-gap: 3.25rem;
 }
 
 .rectangle-box, .square-box {
@@ -212,12 +215,14 @@ section p {
     }
 
     .presentation-container {
-        padding: 4rem;
+        padding: 3.25rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
     }
 
     .device-col-row {
         flex-direction: row;
-        column-gap: 4rem;
+        column-gap: 3.25rem;
     }
 
     .device-col-row > * {
