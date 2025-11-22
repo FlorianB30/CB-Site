@@ -334,6 +334,14 @@ section p {
     align-items: center;
 }
 
+.service-line-header {
+    flex: 1;
+    height: 1px;
+    background-color: #E5C1AE;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
 /* Version Desktop */
 @media (min-width: 768px) {
     .burger-menu {
