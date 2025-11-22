@@ -147,17 +147,26 @@ section {
     row-gap: 2rem;
 }
 
-section h1, section h2 {
+h1, h2 {
     color: #D5AA48;
     text-align: center;
 }
 
-section p {
+p {
     color: #8C7063;
     text-align: center;
     display: flex;
     flex-direction: column;
     row-gap: 3.25rem;
+}
+
+a {
+    color: #8C7063;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #D5AA48;
 }
 
 .presentation-container {
@@ -342,6 +351,34 @@ section p {
     margin-bottom: 1rem;
 }
 
+footer {
+    background-color: #FFFFFF;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+footer h2, p, a {
+    text-align: left;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.foot-box {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.foot-box > *:first-child {
+    margin-bottom: 1rem;
+}
+
 /* Version Desktop */
 @media (min-width: 768px) {
     .burger-menu {
@@ -402,4 +439,10 @@ section p {
     .section-btn-container-oposite-placement {
         align-self: flex-end;
     }
+
+    .footer-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }    
 }
