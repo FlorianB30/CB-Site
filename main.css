@@ -411,6 +411,54 @@ footer h2, p, a {
     margin-bottom: 1rem;
 }
 
+
+/* Animation pour les éléments qui viennent de la gauche */
+@keyframes slideLeft {
+    from {
+      transform: translateX(-120px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Animation pour les éléments qui viennent de la droite */
+  @keyframes slideRight {
+    from {
+      transform: translateX(120px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    } 
+  }
+  
+  /* Base */
+  .avis-box {
+    opacity: 0;
+    animation-fill-mode: both;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+  
+    /* Animation liée au scroll */
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+  }
+  
+  /* Impairs → animation gauche */
+  .avis-box:nth-child(odd) {
+    animation-name: slideLeft;
+  }
+  
+  /* Pairs → animation droite */
+  .avis-box:nth-child(even) {
+    animation-name: slideRight;
+  }
+  
+
 /* Version Desktop */
 @media (min-width: 768px) {
     .burger-menu {
@@ -478,50 +526,3 @@ footer h2, p, a {
         justify-content: space-between;
     }    
 }
-
-/* Animation pour les éléments qui viennent de la gauche */
-@keyframes slideLeft {
-    from {
-      transform: translateX(-120px);
-      opacity: 0;
-    }
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-  
-  /* Animation pour les éléments qui viennent de la droite */
-  @keyframes slideRight {
-    from {
-      transform: translateX(120px);
-      opacity: 0;
-    }
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-  
-  /* Base */
-  .avis-box {
-    opacity: 0;
-    animation-fill-mode: both;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
-  
-    /* Animation liée au scroll */
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
-  }
-  
-  /* Impairs → animation gauche */
-  .avis-box:nth-child(odd) {
-    animation-name: slideLeft;
-  }
-  
-  /* Pairs → animation droite */
-  .avis-box:nth-child(even) {
-    animation-name: slideRight;
-  }
-  
