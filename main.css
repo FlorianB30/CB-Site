@@ -341,6 +341,7 @@ a:hover {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .service-line-header {
