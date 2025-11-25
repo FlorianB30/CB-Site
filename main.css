@@ -336,7 +336,7 @@ a:hover {
     padding: 0.5rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    width: 20rem;
+    min-width: 15rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
