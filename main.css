@@ -496,6 +496,11 @@ input {
     background-color: #D5AA48;
     height: 2px;
 }
+
+.boxes-form label {
+    color: #D5AA48;
+}
+
 /* Animation pour les éléments qui viennent de la gauche */
 @keyframes slideLeft {
     from {
