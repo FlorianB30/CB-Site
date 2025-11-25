@@ -430,6 +430,20 @@ footer h2, p, a {
     margin-top: 1rem;
 }
 
+.img-illustration, .img-illustration-2 {
+    background-image: url(assets/Image_pc.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 1;
+    min-height: 18rem;
+    background-color: transparent;
+}
+
+.img-illustration-2 {
+    background-image: url(assets/Image_tasse.png);
+}
+
 .logo-contact {
     background-image: url(assets/Logo\ Site.png);
     background-size: contain;
