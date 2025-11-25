@@ -501,6 +501,73 @@ input {
     color: #D5AA48;
 }
 
+.tarif-presentation * {
+    text-align: left;
+}
+
+.tarif-presentation .bold-n-big {
+    color: #D5AA48;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: end;
+}
+
+.card-tarif {
+    background-color: #E5C1AE;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 10rem;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.card-tarif p {
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.accordion-tarif {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.accordion-head {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+}
+
+.accordion-head > div:first-child {
+    flex: content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.75rem;
+    border-color: #D5AA48;
+    border-style: solid;
+}
+
+.accordion-head > div:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-color: #D5AA48;
+    border-style: solid;
+    width: 3rem;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-2 {
+    flex: 2;
+}
+
 /* Animation pour les éléments qui viennent de la gauche */
 @keyframes slideLeft {
     from {
