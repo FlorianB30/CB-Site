@@ -432,10 +432,56 @@ footer h2, p, a {
 
 .logo-contact {
     background-image: url(assets/Logo\ Site.png);
-    background-size: cover;
-    height: 50rem;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 1;
+    min-height: 18rem;
+    border-color: #D5AA48;
+    border-style: solid;
+    border-style: 2px;
+    background-color: #FFFFFF;
 }
 
+input {
+    background-color: transparent;
+    border-style: none;
+}
+
+*::placeholder {
+    color: #D5AA48;
+}
+
+.input-form-contact {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+}
+
+.form-contact {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.form-contact textarea {
+    border-color: #D5AA48;
+    border-width: 3px;
+    padding: 1rem;
+    height: 10rem;
+}
+
+.data-form {
+    background-color: #FFFFFF;
+    padding: 1rem;
+    border-color: #D5AA48;
+    border-style: solid;
+}
+
+.form-contact .service-line-header {
+    background-color: #D5AA48;
+    height: 2px;
+}
 /* Animation pour les éléments qui viennent de la gauche */
 @keyframes slideLeft {
     from {
