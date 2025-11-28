@@ -277,7 +277,14 @@
                             <div class="service-line-header"></div>
                             <div class="input-form-contact">
                                 <p>icon</p>
-                                <input type="text" name="object" id="object" placeholder="Objet de la demande">
+                                <p name="object" id="object">Objet de la demande</p> 
+                                <p>+</p>
+                            </div>
+                            <div class="flex-col">
+                                <p onclick="setMailObject(`Demande d'informations`)">Demande d'informations</p>
+                                <p onclick="setMailObject(`Devis ou accompagnement personnalisé`)">Devis ou accompagnement personnalisé</p>
+                                <p onclick="setMailObject(`Prise de contact générale`)">Prise de contact générale</p>
+                                <p onclick="setMailObject(`Autre`)">Autre</p>
                             </div>
                             <div class="service-line-header"></div>
                         </div>
@@ -297,7 +304,7 @@
                             </div>
                         </div>
                         <div class="section-btn-container section-btn-container-oposite-placement">
-                            <p class="section-btn">Envoyer ma demande</p>
+                            <p class="section-btn" onClick="mailSender()">Envoyer ma demande</p>
                         </div>
                     </div>
                 </div>
