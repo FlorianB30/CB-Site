@@ -40,6 +40,28 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+const displayTarifDescription = (id) => {
+    const tarifsElements = document.querySelectorAll(".display-flex") 
+    const tarifsBtns = document.querySelectorAll(".btn-oppen-tarif") 
+
+    tarifsElements.forEach((e) => {
+        if (e.id != id) e.classList.remove('display-flex')
+    })
+
+    tarifsBtns.forEach((b) => {
+        if (b.id != 'btn-' + id) b.classList.remove('btn-oppen-tarif')
+    })
+
+
+    if(document.getElementById(id).classList.contains('display-flex')) {
+        document.getElementById(id).classList.remove('display-flex')
+        document.getElementById('btn-' + id).classList.remove('btn-oppen-tarif')
+    } else {
+        document.getElementById(id).classList.add('display-flex')
+        document.getElementById('btn-' + id).classList.add('btn-oppen-tarif')
+    }
+}
+
 const mailSender = () =>  {
     const mail = {
         client_name: document.getElementById('name').value,
