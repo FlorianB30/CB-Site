@@ -435,16 +435,16 @@
                                 <input type="text" name="dispo" id="dispo" placeholder="Disponibilités pour un premier échange (facultatif)">
                             </div>
                             <div class="service-line-header"></div>
-                            <div class="input-form-contact">
+                            <div class="input-form-contact flex-end-last">
                                 <p>icon</p>
                                 <p name="object" id="object">Objet de la demande</p> 
-                                <p>+</p>
+                                <p onclick="displayListObjects()">+</p>
                             </div>
-                            <div class="flex-col">
-                                <p onclick="setMailObject(`Demande d'informations`)">Demande d'informations</p>
-                                <p onclick="setMailObject(`Devis ou accompagnement personnalisé`)">Devis ou accompagnement personnalisé</p>
-                                <p onclick="setMailObject(`Prise de contact générale`)">Prise de contact générale</p>
-                                <p onclick="setMailObject(`Autre`)">Autre</p>
+                            <div class="flex-col objects-list " id="objects-list">
+                                <p id="object-1" onclick="setMailObject(`Demande d'informations`, `object-1`)">Demande d'informations</p>
+                                <p id="object-2" onclick="setMailObject(`Devis ou accompagnement personnalisé`, `object-2`)">Devis ou accompagnement personnalisé</p>
+                                <p id="object-3" onclick="setMailObject(`Prise de contact générale`, `object-3`)">Prise de contact générale</p>
+                                <p id="object-4" onclick="setMailObject(`Autre`, `object-4`)">Autre</p>
                             </div>
                             <div class="service-line-header"></div>
                         </div>

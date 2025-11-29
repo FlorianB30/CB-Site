@@ -62,6 +62,19 @@ const displayTarifDescription = (id) => {
     }
 }
 
+const displayListObjects = () => {
+    if (document.getElementById('objects-list').classList.contains('display-flex-objects-list')) {
+        document.getElementById('objects-list').classList.remove('display-flex-objects-list')
+    } else {
+        document.getElementById('objects-list').classList.add('display-flex-objects-list')
+    }
+}
+
+const selectObject = (id) => {
+    document.querySelectorAll('.border-display').forEach((e) => e.classList.remove('border-display'))
+    document.getElementById(id).classList.add('border-display')
+}
+
 const mailSender = () =>  {
     const mail = {
         client_name: document.getElementById('name').value,
@@ -81,7 +94,8 @@ const mailSender = () =>  {
 
 }
 
-const setMailObject = (object) => {
+const setMailObject = (object, id) => {
+    selectObject(id)
     document.getElementById('object').innerText = object
     console.log(object)
 }

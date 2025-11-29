@@ -383,6 +383,49 @@ a:hover {
     text-align: right;
 }  
 
+#object, #objects-list p {
+    color: #D5AA48;
+}
+
+#objects-list {
+    flex-direction: column;
+    row-gap: 0.5rem;
+    justify-content: center;
+}
+
+.objects-list {
+    display: none;
+}
+
+.display-flex-objects-list {
+    display: flex;
+}
+
+#objects-list p {
+    text-align: center;
+    padding: 0.25rem;
+}
+
+.flex-end-last {
+    justify-content: space-between;
+}
+
+.flex-end-last p:last-child {
+    border-radius: 50%;
+    background-color: #D5AA48;
+    color: #FFFFFF;
+    min-width: 1rem;
+    max-width: 1rem;
+    min-height: 1.1rem;
+    max-height: 1.1rem;
+    text-align: center;
+}
+
+.border-display {
+    border-color: #D5AA48;
+    border-style: solid;
+}
+
 footer {
     background-color: #FFFFFF;
     padding: 3rem;
